@@ -1,0 +1,124 @@
+*{ 
+    box-sizing: border-box; 
+} 
+header{ 
+    display:flex; 
+    justify-content:space-between; 
+    align-items: center; 
+    padding:0px 100px; 
+    margin-top:46px; 
+} 
+.nav-link{ 
+    text-decoration: none; 
+    width:135px; 
+    height:36px; 
+    font-size: 22px; 
+    line-height: 33px; 
+    margin-left:65px; 
+} 
+.sign{ 
+    cursor: pointer; 
+    background-color: black; 
+    width:134px; 
+    height:62px; 
+    border-radius: 7px; 
+    color:white; 
+    font-size: 24px; 
+} 
+.home{ 
+    width:1720px; 
+    height: 852px; 
+    border-radius: 59px; 
+    background-color: #F4F6F5; 
+    margin-left:100px; 
+    margin-top:164px; 
+    display:flex; 
+} 
+.girl{ 
+    width:871px; 
+    height:784px; 
+    margin-right:81px; 
+    margin-top:68px; 
+   
+} 
+.home h1{ 
+    font-family: 'Poppins', sans-serif; 
+font-size: 96px; 
+margin-left:119px; 
+margin-top:77px; 
+line-height: 120px; 
+margin-left:121px; 
+margin-top:85px; 
+ 
+ 
+} 
+.home p{ 
+    font-family: 'Poppins', sans-serif;  
+font-size: 32px; 
+line-height: 48px; 
+margin-left:119px; 
+margin-top:32px; 
+} 
+.home .two{ 
+    margin-left:125px; 
+    margin-bottom: 90px; 
+     
+} 
+.home .shop{ 
+    font-family: 'Poppins', sans-serif;  
+font-size: 30px; 
+line-height: 45px; 
+background-color:black; 
+color:white; 
+margin-left:34px; 
+border-radius: 10px; 
+ 
+} 
+.logo{ 
+    display: flex; 
+    margin-top:63px; 
+    width: 100%; 
+    background-color:#EBD96B; 
+    justify-content: space-evenly; 
+} 
+.logo img{ 
+ width: 15%; 
+ object-fit: contain; 
+ } 
+ 
+ .new{ 
+    margin-top:63px; 
+    margin-left: 104px; 
+ } 
+ .new p{ 
+     font-family: 'Poppins', sans-serif;  
+font-size: 48px; 
+font-weight: bold; 
+line-height: 50px; 
+line-height: 69%; 
+align: Left; 
+} 
+ 
+.new .threepictures{ 
+    display:flex; 
+    margin-top:101px; 
+    gap:90px; 
+} 
+ 
+.new .name{ 
+font-family: 'Poppins', sans-serif;  
+font-size: 32px; 
+line-height: 50px; 
+line-height: 104%; 
+align: left; 
+margin-bottom:28px; 
+} 
+ 
+.new .explore{ 
+font-family: 'Poppins', sans-serif;  
+font-size: 24px; 
+line-height: 50px; 
+line-height: 139%; 
+color:#7F7F7F; 
+padding-top:7px; 
+}
