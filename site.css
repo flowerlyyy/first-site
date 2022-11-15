@@ -326,7 +326,7 @@ line-height: 70px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-padding:141px 476px 0px 478px;
+padding-top: 141px;
 }
 .email p{
 font-family: 'Poppins', sans-serif; 
@@ -338,6 +338,7 @@ text-align: center;
 color: #FFFCF8;
 padding-top: 10px;
 }
+
 .email input{
     width:574px;
     height:87px ;

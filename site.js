@@ -105,7 +105,7 @@ const products=[
     const leftButton = document.querySelector('.carousel-button.left');
     const rightButton = document.querySelector('.carousel-button.right');
     
-    function handleCarouselButtonClick(direction) {
+    function handleCarouselButtonClick( direction) {
       currentSlideNumber += direction;
       const margin = -562 * currentSlideNumber;
       firstCard.style.marginLeft = `${margin}px`;
@@ -122,3 +122,4 @@ const products=[
         rightButton.removeAttribute('disabled');
       }
     }
+    setInterval(handleCarouselButtonClick,5000,direction);
