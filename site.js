@@ -73,53 +73,48 @@ const products=[
     },
     ];
 
-    const cardsContainer = document.querySelector('.three-pictures');
 
-    for (const product of products) {
-      renderProductCard(product);
-    }
-    
-    function renderProductCard(product) {
-      const card = document.createElement('div');
-      cardsContainer.appendChild(card);
-      card.outerHTML = getProductCardMarkup(product);
-    }
-    
-    function getProductCardMarkup(product) {
-      return `
-      <div class="column">
-                     <img class="afterchange" src="${product.imageSrc}" alt="" >
+const cardsContainer = document.querySelector('.three-pictures');
+
+for (const product of products) {
+  renderProductCard(product);
+}
+
+function renderProductCard(product) {
+  const card = document.createElement('div');
+  cardsContainer.appendChild(card);
+  card.outerHTML = getProductCardMarkup(product);
+}
+
+function getProductCardMarkup(product) {
+  return `
+  <div class="column">
+                      <img class="afterchange" src="${product.imageSrc}" alt="" >
                      <div class="textarrow">
-                     <div class="text">
-                      <a href="${product.titleLink}" class="name">${product.title} </a>
-                      <a href="${product.descriptionLink}" class="explore">${product.description}</a>
-                     </div>
-                      <img class="arrow" src="${product.arrow}" alt="arrow">
-                 </div>
+                        <div class="text">
+                       <a href="${product.titleLink}" class="name">${product.title} </a>
+                       <a href="${product.descriptionLink}" class="explore">${product.description}</a>
+                      </div>
+                         <img class="arrow" src="${product.arrow}" alt="arrow">
                   </div>
-           `;
-    }
+                   </div>
+              `;
+}
+
+let currentSlideNumber = 0;
+const firstCard = document.querySelector('.column:first-child');
+
+
+function handleCarouselButtonClick(direction) {
+  const margin = -562 * direction;
+  firstCard.style.marginLeft = `${margin}px`;
+
+}
+setInterval(()=>{
+    if(currentSlideNumber===products.length-2){
+        currentSlideNumber = 0;
+       handleCarouselButtonClick(currentSlideNumber);
+     }
+     handleCarouselButtonClick(currentSlideNumber++)
+   }, 1000);
     
-    let currentSlideNumber = 0;
-    const firstCard = document.querySelector('.column:first-child');
-    const leftButton = document.querySelector('.carousel-button.left');
-    const rightButton = document.querySelector('.carousel-button.right');
-    
-    function handleCarouselButtonClick( direction) {
-      currentSlideNumber += direction;
-      const margin = -562 * currentSlideNumber;
-      firstCard.style.marginLeft = `${margin}px`;
-    
-      if(currentSlideNumber === 0) {
-        leftButton.setAttribute('disabled', true);
-      } else {
-        leftButton.removeAttribute('disabled');
-      }
-    
-      if(currentSlideNumber === products.length - 3) {
-        rightButton.setAttribute('disabled', true);
-      } else {
-        rightButton.removeAttribute('disabled');
-      }
-    }
-    setInterval(handleCarouselButtonClick,5000,direction);
