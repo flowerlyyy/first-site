@@ -313,6 +313,37 @@ line-height: 35px;
     position:absolute;
     z-index: -1;
 }
+
+.comments{
+    margin-top: 100px;
+    
+}
+.user-message{
+    width: 50%;
+}
+.common-comments{
+    display: flex;
+
+}
+
+.title, .user-email , .user-comment{
+    font-family: 'Poppins', sans-serif; 
+font-size: 32px;
+/* line-height: 50px; */
+}
+.buttons{
+    display: flex;
+justify-content: space-evenly;
+}
+.carousel-button{
+    width:200px ;
+    height:50px ;
+    border-radius: 15px;
+    border-color: red;
+    background-color: #FBC663;
+    font-size: 25px;
+    
+}
 .email{
     background-color: #E5C643;
     height: 623px;
