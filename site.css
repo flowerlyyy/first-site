@@ -538,8 +538,18 @@ line-height: 10px;
 border-radius: 5px;
 }
 .logo{
-    margin-top:10px;
+    height: 60px;
+    background-color:#EBD96B;
+    margin-top: 10px;
 }
+.pictures{
+    padding-top:15px;   
+}
+.pictures img{
+    width: 50px;
+    height: 30px;
+}
+
 .new{
     margin-top:30px;
     left:5px;
@@ -553,16 +563,16 @@ border-radius: 5px;
     width: 60px;
     height: 10px ;    
 }
-.new .threepictures{
+.new .three-pictures{
     display:flex;
     margin-top:15px;
-    gap:10px;
-    overflow: auto;
-    
-    }
-.threepictures .afterchange{
-    width:150px;
-    height:200px;
+    transition: margin-left .6s ease-in-out;
+    gap:20px;
+    overflow: hidden;
+}
+.column .afterchange{
+    width: 170px;
+    height: 160px;
 }
 .new .name{
     font-size: 12px;
@@ -654,13 +664,13 @@ line-height: 50px;
 }
 .pink{
     display: flex;
-    gap:20px;
+    gap: 20px;
     margin-top:20px;
     overflow: auto;
  
 }
 .favourite .smiles{
-    width: 180px;
+    width: 170px;
     height: 160px;
 }
 .favourite .name{ 
@@ -672,10 +682,9 @@ line-height: 50px;
    
     }
     .favourite .explore{
- font-size: 8px;
-    line-height: 15px;
-    line-height: 139%;
-
+    font-size: 8px;
+    line-height: 8px;
+    line-height: 10%;
     padding-bottom:10px;
 
     }
@@ -717,6 +726,22 @@ line-height: 80%;
 .phone span{
 font-size: 9px;
 line-height: 15px;
+}
+.comments{
+    margin-top: 10px;
+    }
+    .user-message{
+        width: 100%;
+        line-height: 12px;
+    }
+    .common-comments{
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+    }
+
+.title, .user-email , .user-comment{
+font-size: 12px;
 }
 .email{
     height: 200px;

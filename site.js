@@ -134,27 +134,6 @@ setInterval(()=>{
 
  }));
 
-//     let currentSlideCount = 0;
-// const secondCard = document.querySelector('.user-message:first-child');
-// const leftButton = document.querySelector('.carousel-button.left');
-// const rightButton = document.querySelector('.carousel-button.right');
-//     function handleCarouselButtonClick(direction2) {
-//         currentSlideCount += direction2;
-//         const margin = -390 * currentSlideCount;
-//         secondCard.style.marginLeft = `${margin}px`;
-    
-//         if(currentSlideCount === 0) {
-//           leftButton.setAttribute('disabled', true);
-//         } else {
-//           leftButton.removeAttribute('disabled');
-//         }
-    
-//         if(currentSlideCount === item.length - 3) {
-//           rightButton.setAttribute('disabled', true);
-//         } else {
-//           rightButton.removeAttribute('disabled');
-//         }
-//       }
 
 
 
